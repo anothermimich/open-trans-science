@@ -63,8 +63,9 @@ body {
   border-left: 0;
   border-right: 0;
   font-size: 5rem;
-  gap: 1rem;
+  gap: 2rem;
   padding: 1rem 0;
+  padding-bottom: 2rem;
   margin-top: 5rem;
 }
 .title-open {
