@@ -49,6 +49,7 @@ body {
   font-family: "tex_gyre_herosbold";
   color: #333;
   max-width: 80vw;
+  min-width: 1280px;
   margin: 0 auto;
 }
 .grid {
@@ -56,6 +57,9 @@ body {
 }
 .grid-3 {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
 }
 /* main title */
 .title {
@@ -161,14 +165,67 @@ body {
   grid-column-start: 2;
   grid-column-end: -1;
   padding: 2rem;
-}
-.link-cipro {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
   font-size: 2rem;
+  text-wrap: nowrap;
 }
-.link-cipro span {
+.mtf-links-list {
+  grid-template-columns: 2rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  padding-bottom: 4rem;
+}
+.mtf-links-list::before {
+  content: "";
+  font-family: "tex_gyre_herosbold";
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: 1rem;
+  background-color: #fff;
+  width: 120%;
+  height: 0.7rem;
+}
+.mtf-links-list::after {
+  content: "MtF";
+  font-family: "tex_gyre_herosbold";
+  display: block;
+  position: absolute;
+  font-size: 4rem;
+  color: #fff;
+  top: -1rem;
+  right: 0.8rem;
+}
+.ftm-links-list {
+  grid-template-columns: 2rem 1fr;
+  gap: 1rem;
+  align-items: center;
+  position: relative;
+  padding-bottom: 4rem;
+}
+.ftm-links-list::before {
+  content: "";
+  font-family: "tex_gyre_herosbold";
+  display: block;
+  position: absolute;
+  top: -40px;
+  right: 1rem;
+  background-color: #fff;
+  width: 120%;
+  height: 0.7rem;
+}
+.ftm-links-list::after {
+  content: "FtM";
+  font-family: "tex_gyre_herosbold";
+  display: block;
+  position: absolute;
+  font-size: 4rem;
+  color: #fff;
+  top: -1rem;
+  right: 0.8rem;
+}
+.translate-0--10 {
+  /* if the link start with lowercap letter it's better to translate it in 10% to center it */
   transform: translate(0, -10%);
 }
 .circle {
