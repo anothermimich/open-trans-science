@@ -155,8 +155,7 @@ body {
   grid-column-end: -1;
   grid-row-start: 1;
   text-align: end;
-  padding: 2rem;
-  padding-right: 3rem;
+  padding: 2rem 3rem 5rem 2rem;
   background-color: #333;
 }
 .links-list {
@@ -164,7 +163,7 @@ body {
   background-color: #333;
   grid-column-start: 2;
   grid-column-end: -1;
-  padding: 2rem;
+  padding: 0rem 2rem;
   font-size: 2rem;
   text-wrap: nowrap;
 }
@@ -173,14 +172,14 @@ body {
   gap: 1rem;
   align-items: center;
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 .mtf-links-list::before {
   content: "";
   font-family: "tex_gyre_herosbold";
   display: block;
   position: absolute;
-  top: -40px;
+  top: -3rem;
   right: 1rem;
   background-color: #fff;
   width: 120%;
@@ -201,14 +200,14 @@ body {
   gap: 1rem;
   align-items: center;
   position: relative;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 .ftm-links-list::before {
   content: "";
   font-family: "tex_gyre_herosbold";
   display: block;
   position: absolute;
-  top: -40px;
+  top: -2.5rem;
   right: 1rem;
   background-color: #fff;
   width: 120%;
