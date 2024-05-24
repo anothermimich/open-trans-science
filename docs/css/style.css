@@ -48,6 +48,7 @@ a {
 body {
   font-family: "tex_gyre_heros";
   font-feature-settings: "liga" 1;
+  font-size: 2rem;
   color: #333;
   max-width: 60vw;
   min-width: 1280px;
@@ -68,10 +69,22 @@ body {
   -moz-font-feature-settings: "smcp" 1;
   -ms-font-feature-settings: "smcp" 1;
   font-feature-settings: "smcp" 1;
+  letter-spacing: 2px;
+}
+.smcp span {
+  font-size: 1.3rem;
 }
 .translate-0--10 {
   /* if the link start with lower caps or small caps it's better to translate it in 10% to center it */
   transform: translate(0, -10%);
+}
+.anchor {
+  position: absolute;
+  transform: translateY(-10vh);
+}
+.heart-cursor {
+  cursor: url("data:image/svg+xml,%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools --%3E%3Csvg fill='%23ff0000' width='22px' height='22px' viewBox='0 0 1920 1920' xmlns='http://www.w3.org/2000/svg' stroke='%23ff0000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'/%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M1771.731 291.037C1675.709 193.659 1547.944 140 1411.818 140h-.113c-136.125 0-263.777 53.66-359.573 150.924-37.618 38.07-68.571 80.997-92.294 127.426-23.61-46.429-54.563-89.356-92.068-127.313C771.86 193.659 644.208 140 507.97 140h-.113c-136.012 0-263.777 53.66-359.8 151.037-197.691 200.629-197.691 527.103 1.695 729.088l810.086 760.154 811.893-761.736c197.692-200.403 197.692-526.877 0-727.506' fill-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E"),
+    pointer;
 }
 /* main title */
 .title {
@@ -98,7 +111,6 @@ body {
 }
 /* banner */
 .banner {
-  font-size: 2rem;
   grid-template-columns: 14rem 1fr 1fr;
 }
 
@@ -176,15 +188,17 @@ body {
   grid-column-start: 2;
   grid-column-end: -1;
   padding: 0rem 2rem;
-  font-size: 2rem;
   text-wrap: nowrap;
 }
-.mtf-links-list {
+.section-links-list {
   grid-template-columns: 2rem 1fr;
   gap: 1rem;
   align-items: center;
   position: relative;
   padding-bottom: 5rem;
+}
+.section-links-list:last-child {
+  padding-bottom: 2rem;
 }
 
 .mtf-links-list::before {
@@ -208,13 +222,6 @@ body {
   width: 120%;
 }
 
-.ftm-links-list {
-  grid-template-columns: 2rem 1fr;
-  gap: 1rem;
-  align-items: center;
-  position: relative;
-  padding-bottom: 5rem;
-}
 .ftm-links-list::before {
   content: "ftm";
   font-size: 3rem;
@@ -228,6 +235,15 @@ body {
   font-feature-settings: "smcp" 1;
   padding-top: 1rem;
   padding-right: 0.5rem;
+  display: block;
+  position: absolute;
+  border-top: 0.7rem solid #fff;
+  top: -3rem;
+  right: 1rem;
+  width: 120%;
+}
+.etc-links-list::before {
+  content: "";
   display: block;
   position: absolute;
   border-top: 0.7rem solid #fff;
@@ -252,4 +268,62 @@ body {
   width: 0.2rem;
   height: 100%;
   background-color: #333;
+}
+/* footer */
+
+footer {
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 5rem;
+  border-top: 0.7rem solid #333;
+}
+
+footer a {
+  font-size: 1.2rem;
+}
+
+.license-icons {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.license-icons img {
+  width: 1rem;
+}
+
+/* queries */
+@media (max-width: 1279px) {
+  main,
+  section,
+  footer {
+    display: none;
+  }
+  body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    min-width: fit-content;
+    max-width: initial;
+  }
+  body::after {
+    display: block;
+    position: absolute;
+    content: "Use a computer";
+    font-size: 5vw;
+    font-weight: bold;
+    padding: 1rem 0rem;
+    border-top: 0.7rem solid #333;
+    border-bottom: 0.7rem solid #333;
+    color: #333;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto 0;
+  }
 }
