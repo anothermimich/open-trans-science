@@ -46,11 +46,13 @@ a {
 /* general */
 
 body {
-  font-family: "tex_gyre_herosbold";
+  font-family: "tex_gyre_heros";
+  font-feature-settings: "liga" 1;
   color: #333;
   max-width: 80vw;
   min-width: 1280px;
   margin: 0 auto;
+  user-select: none;
 }
 .grid {
   display: grid;
@@ -61,12 +63,23 @@ body {
 .grid-2 {
   grid-template-columns: 1fr 1fr;
 }
+.smcp {
+  -webkit-font-feature-settings: "smcp" 1;
+  -moz-font-feature-settings: "smcp" 1;
+  -ms-font-feature-settings: "smcp" 1;
+  font-feature-settings: "smcp" 1;
+}
+.translate-0--10 {
+  /* if the link start with lower caps or small caps it's better to translate it in 10% to center it */
+  transform: translate(0, -10%);
+}
 /* main title */
 .title {
   border: 0.7rem solid #333;
   border-left: 0;
   border-right: 0;
   font-size: 5rem;
+  font-weight: bold;
   gap: 2rem;
   padding: 1rem 0;
   padding-bottom: 2rem;
@@ -86,7 +99,6 @@ body {
 /* banner */
 .banner {
   font-size: 2rem;
-  font-family: "tex_gyre_herosregular";
   grid-template-columns: 14rem 1fr 1fr;
 }
 
@@ -94,7 +106,7 @@ body {
   border-left: 0.7rem solid #333;
   font-size: 3rem;
   padding-bottom: 2rem;
-  font-family: "tex_gyre_herosbold";
+  font-weight: bold;
   grid-column-start: 1;
   grid-row-start: 3;
   text-align: center;
@@ -151,6 +163,7 @@ body {
 }
 .links h2 {
   font-size: 5rem;
+  font-weight: bold;
   grid-column-start: 2;
   grid-column-end: -1;
   grid-row-start: 1;
@@ -159,7 +172,6 @@ body {
   background-color: #333;
 }
 .links-list {
-  font-family: "tex_gyre_herosregular";
   background-color: #333;
   grid-column-start: 2;
   grid-column-end: -1;
@@ -176,7 +188,6 @@ body {
 }
 .mtf-links-list::before {
   content: "";
-  font-family: "tex_gyre_herosbold";
   display: block;
   position: absolute;
   top: -3rem;
@@ -186,8 +197,12 @@ body {
   height: 0.7rem;
 }
 .mtf-links-list::after {
-  content: "MtF";
-  font-family: "tex_gyre_herosbold";
+  content: "mtf";
+  font-weight: bold;
+  -webkit-font-feature-settings: "smcp" 1;
+  -moz-font-feature-settings: "smcp" 1;
+  -ms-font-feature-settings: "smcp" 1;
+  font-feature-settings: "smcp" 1;
   display: block;
   position: absolute;
   font-size: 4rem;
@@ -204,7 +219,6 @@ body {
 }
 .ftm-links-list::before {
   content: "";
-  font-family: "tex_gyre_herosbold";
   display: block;
   position: absolute;
   top: -2.5rem;
@@ -214,8 +228,12 @@ body {
   height: 0.7rem;
 }
 .ftm-links-list::after {
-  content: "FtM";
-  font-family: "tex_gyre_herosbold";
+  content: "ftm";
+  font-weight: bold;
+  -webkit-font-feature-settings: "smcp" 1;
+  -moz-font-feature-settings: "smcp" 1;
+  -ms-font-feature-settings: "smcp" 1;
+  font-feature-settings: "smcp" 1;
   display: block;
   position: absolute;
   font-size: 4rem;
@@ -223,10 +241,7 @@ body {
   top: -1rem;
   right: 0.8rem;
 }
-.translate-0--10 {
-  /* if the link start with lowercap letter it's better to translate it in 10% to center it */
-  transform: translate(0, -10%);
-}
+
 .circle {
   width: 2rem;
   height: 2rem;
