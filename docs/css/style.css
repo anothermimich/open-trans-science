@@ -203,12 +203,13 @@ body {
   -moz-font-feature-settings: "smcp" 1;
   -ms-font-feature-settings: "smcp" 1;
   font-feature-settings: "smcp" 1;
+  letter-spacing: -0.4rem;
   display: block;
   position: absolute;
   font-size: 4rem;
   color: #fff;
-  top: -1rem;
-  right: 0.8rem;
+  top: -1.6rem;
+  right: 1.5rem;
 }
 .ftm-links-list {
   grid-template-columns: 2rem 1fr;
@@ -234,12 +235,13 @@ body {
   -moz-font-feature-settings: "smcp" 1;
   -ms-font-feature-settings: "smcp" 1;
   font-feature-settings: "smcp" 1;
+  letter-spacing: -0.4rem;
   display: block;
   position: absolute;
   font-size: 4rem;
   color: #fff;
-  top: -1rem;
-  right: 0.8rem;
+  top: -1.6rem;
+  right: 1.5rem;
 }
 
 .circle {
