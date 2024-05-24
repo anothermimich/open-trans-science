@@ -189,17 +189,16 @@ body {
 
 .mtf-links-list::before {
   content: "mtf";
+  font-size: 3rem;
   font-weight: bold;
+  letter-spacing: -0.4rem;
+  text-align: end;
+  color: #fff;
   -webkit-font-feature-settings: "smcp" 1;
   -moz-font-feature-settings: "smcp" 1;
   -ms-font-feature-settings: "smcp" 1;
   font-feature-settings: "smcp" 1;
-  letter-spacing: -0.4rem;
-  text-align: end;
-  font-size: 4rem;
-  color: #fff;
-  top: -1.6rem;
-  padding-top: 0.7rem;
+  padding-top: 1rem;
   padding-right: 0.5rem;
   display: block;
   position: absolute;
@@ -208,6 +207,7 @@ body {
   right: 1rem;
   width: 120%;
 }
+
 .ftm-links-list {
   grid-template-columns: 2rem 1fr;
   gap: 1rem;
@@ -217,17 +217,16 @@ body {
 }
 .ftm-links-list::before {
   content: "ftm";
+  font-size: 3rem;
   font-weight: bold;
+  letter-spacing: -0.4rem;
+  text-align: end;
+  color: #fff;
   -webkit-font-feature-settings: "smcp" 1;
   -moz-font-feature-settings: "smcp" 1;
   -ms-font-feature-settings: "smcp" 1;
   font-feature-settings: "smcp" 1;
-  letter-spacing: -0.4rem;
-  text-align: end;
-  font-size: 4rem;
-  color: #fff;
-  top: -1.6rem;
-  padding-top: 0.7rem;
+  padding-top: 1rem;
   padding-right: 0.5rem;
   display: block;
   position: absolute;
