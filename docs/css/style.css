@@ -49,7 +49,7 @@ body {
   font-family: "tex_gyre_heros";
   font-feature-settings: "liga" 1;
   color: #333;
-  max-width: 80vw;
+  max-width: 60vw;
   min-width: 1280px;
   margin: 0 auto;
   user-select: none;
@@ -162,7 +162,7 @@ body {
   border-right: 0.7rem solid #333;
 }
 .links h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   grid-column-start: 2;
   grid-column-end: -1;
@@ -186,17 +186,8 @@ body {
   position: relative;
   padding-bottom: 5rem;
 }
+
 .mtf-links-list::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -3rem;
-  right: 1rem;
-  background-color: #fff;
-  width: 120%;
-  height: 0.7rem;
-}
-.mtf-links-list::after {
   content: "mtf";
   font-weight: bold;
   -webkit-font-feature-settings: "smcp" 1;
@@ -204,12 +195,18 @@ body {
   -ms-font-feature-settings: "smcp" 1;
   font-feature-settings: "smcp" 1;
   letter-spacing: -0.4rem;
-  display: block;
-  position: absolute;
+  text-align: end;
   font-size: 4rem;
   color: #fff;
   top: -1.6rem;
-  right: 1.5rem;
+  padding-top: 0.7rem;
+  padding-right: 0.5rem;
+  display: block;
+  position: absolute;
+  border-top: 0.7rem solid #fff;
+  top: -3rem;
+  right: 1rem;
+  width: 120%;
 }
 .ftm-links-list {
   grid-template-columns: 2rem 1fr;
@@ -219,16 +216,6 @@ body {
   padding-bottom: 5rem;
 }
 .ftm-links-list::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2.5rem;
-  right: 1rem;
-  background-color: #fff;
-  width: 120%;
-  height: 0.7rem;
-}
-.ftm-links-list::after {
   content: "ftm";
   font-weight: bold;
   -webkit-font-feature-settings: "smcp" 1;
@@ -236,12 +223,18 @@ body {
   -ms-font-feature-settings: "smcp" 1;
   font-feature-settings: "smcp" 1;
   letter-spacing: -0.4rem;
-  display: block;
-  position: absolute;
+  text-align: end;
   font-size: 4rem;
   color: #fff;
   top: -1.6rem;
-  right: 1.5rem;
+  padding-top: 0.7rem;
+  padding-right: 0.5rem;
+  display: block;
+  position: absolute;
+  border-top: 0.7rem solid #fff;
+  top: -3rem;
+  right: 1rem;
+  width: 120%;
 }
 
 .circle {
