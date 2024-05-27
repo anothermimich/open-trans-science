@@ -296,6 +296,40 @@ footer a {
   width: 1rem;
 }
 
+/* about section */
+
+.about-what,
+.about-who,
+.about-why {
+  display: none;
+  position: relative;
+  border-bottom: 0.7rem solid #333;
+  height: 20rem;
+  padding: 2rem 13rem;
+}
+.about-what {
+  background: url("/docs/imgs/layered-steps-haikei.svg") no-repeat bottom right;
+  background-size: cover;
+  border-right: 0.7rem solid #333;
+}
+.about-why {
+  border-left: 0.7rem solid #333;
+}
+.about-who {
+  background: url("/docs/imgs/layered-steps-haikei.svg") no-repeat bottom left;
+  background-size: cover;
+  border-right: 0.7rem solid #333;
+}
+.about-what h2,
+.about-who h2 {
+  transform: rotate(90deg);
+  position: absolute;
+  font-size: 6rem;
+  font-weight: bold;
+  left: -5rem;
+  top: 4rem;
+}
+
 /* queries */
 @media (max-width: 1279px) {
   main,
