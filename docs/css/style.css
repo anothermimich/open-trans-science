@@ -91,7 +91,7 @@ body {
   border: 0.7rem solid #333;
   border-left: 0;
   border-right: 0;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   gap: 2rem;
   padding: 1rem 0;
@@ -116,7 +116,7 @@ body {
 
 .banner-title {
   border-left: 0.7rem solid #333;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-bottom: 2rem;
   font-weight: bold;
   grid-column-start: 1;
@@ -124,7 +124,7 @@ body {
   text-align: center;
 }
 .banner-title span {
-  font-size: 7.5rem;
+  font-size: 6.5rem;
 }
 .banner-border {
   grid-column-start: 1;
@@ -174,7 +174,7 @@ body {
   border-right: 0.7rem solid #333;
 }
 .links h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   grid-column-start: 2;
   grid-column-end: -1;
